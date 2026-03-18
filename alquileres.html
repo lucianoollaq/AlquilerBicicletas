@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/bicycle.svg">
+    <title>Affitto</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="nav-item">
+                    <a class="hover-effect-3" aria-current="page" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="hover-effect-3" href="alquileres.html#filterzone-alquileres">Alquileres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="hover-effect-3" href="estaciones.html#filterzone-estaciones">Estaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="hover-effect-3" href="datos.html">Mi Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="hover-effect-3" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="info">
+        <video muted loop autoplay height="100%">
+            <source src="images/background.mp4" type="video/mp4">
+        </video>
+        <div class="texto">
+            <h1 class="titulo">AFFITTO</h1>
+            <p class="subtitulo">TU LUGAR DE ALQUILER DE CONFIANZA</p>
+        </div>
+        <div class="capa"></div>
+    </div>
+    <div>
+        <form id="filterzone-alquileres">
+            <h1 class="titulo-alquileres">Historial de Alquileres</h1>
+            <div class="filtros-alquileres">
+                <legend id="legend-alq">Estación:</legend>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Elegir...</option>
+                    <option value="1">Plaza San Martín</option>
+                    <option value="2">Ciudad Universitaria</option>
+                    <option value="3">Plaza España</option>
+                    <option value="4">Patio Olmos</option>
+                    <option value="5">Plaza Alberdi</option>
+                    <option value="6">Terminal de Ómnibus</option>
+                </select>
+                <legend id="legend-alq">Fecha:</legend>
+                <div class="row justify-content-center">
+                    <div class="input-calendar">
+                        <input id="startDate" class="form-control" type="date" />
+                        <span id="startDateSelected"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="botones-alquileres">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Incluir Finalizados</label>    
+                </div>
+                <div class="botton-filtrar-alq">
+                    <button type="button" class="btn btn-primary" id="botonfiltrar-alq">Filtrar</button>
+                </div> 
+            </div>
+        </form>
+    </div>
+    <div class="tabla-alquileres">
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha y Hora de retiro</th>
+                    <th>Estación de retiro</th>
+                    <th>Estación de devolución</th>
+                    <th>Fecha y Hora de devolución</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-03-15 08:00</td>
+                    <td>Plaza San Martín</td>
+                    <td>Parque Sarmiento</td>
+                    <td>2024-03-15 08:45</td>
+                </tr>
+                <tr>
+                    <td>2024-03-12 18:00</td>
+                    <td>Ciudad Universitaria</td>
+                    <td>Terminal de Ómnibus</td>
+                    <td>2024-03-12 11:00</td>
+                </tr>
+                <tr>
+                    <td>2024-03-10 08:15</td>
+                    <td>Plaza España</td>
+                    <td>Costanera Norte</td>
+                    <td>2024-03-10 16:00</td>
+                </tr>
+                <tr>
+                    <td>2024-03-08 17:45</td>
+                    <td>Patio Olmos</td>
+                    <td>Plaza Las Heras</td>
+                    <td>2024-03-08 18:20</td>
+                </tr>
+                <tr>
+                    <td>2024-03-07 17:10</td>
+                    <td>Plaza Alberdi</td>
+                    <td>Barrio Jardín</td>
+                    <td>2024-03-07 17:50</td>
+                </tr>
+                <tr>
+                    <td>2024-03-06 09:00</td>
+                    <td>Plaza Alberdi</td>
+                    <td>Ciudad Universitaria</td>
+                    <td>2024-03-06 09:40</td>
+                </tr>
+                <tr>
+                    <td>2024-02-28 16:30</td>
+                    <td>Terminal de Ómnibus</td>
+                    <td>Plaza San Martín</td>
+                    <td>2024-02-28 17:00</td>
+                </tr>
+            </tbody> 
+        </table>
+    </div>
+</body>
+</html>
